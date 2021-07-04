@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<style>
+    	body {
+      		background: url('bg.png');
+    	}
+    	img {
+     		 width: 200px;
+      		 opacity: 0.9;
+    	}
+    	ul {
+      		list-style-type: none;
+      		ba margin: 0;
+      		padding: 0;
+      		overflow: hidden;
+      	}
+
+    	li {
+      		float: right;
+      		display: block;
+      		color: white;
+      		text-align: center;
+      		padding: 14px 16px;
+      		text-decoration: none;
+    	}
+	</style>
+</head>
+<body>
+	<ul>
+    	<img src="logo.png">
+    	<li></li>
+    	<li><a href="dashboard.html">Dashboard</a></li>
+    	<li onclick="makeChange(); return false;" id="log">Log out</li>
+    </ul>
+	<br/>
+    <div class="container">
+    	<center>
+    		<iframe src="https://chatbot.hellotars.com/conv/QhdlQc" height=600; width=300; ></iframe>
+    	</center>
+  	</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="web3.min.js"></script>
+  <script src="truffle-contract.js"></script>
+  <script src="logout_state.js"></script>
+</body>
+</html>
